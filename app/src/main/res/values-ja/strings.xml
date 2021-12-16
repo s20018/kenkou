@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">BMI</string>
+    <string name="app_name">健康アプリ</string>
+    <string name="app_bmi">BMIと適正体重</string>
+    <string name="app_taizyu">大人の平均身長と平均体重</string>
+    <string name="app_zyumyo">健康寿命</string>
     <string name="bmi">BMI計算</string>
 </resources>

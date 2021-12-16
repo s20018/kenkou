@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">BMI</string>
+    <string name="app_bmi">bmi</string>
+    <string name="app_taizyu">taizyu</string>
+    <string name="app_zyumyo">zyumyo</string>
     <string name="bmi">bmi</string>
 </resources>
