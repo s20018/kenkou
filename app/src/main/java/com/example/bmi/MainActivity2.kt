@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.bmi.databinding.ActivityMain2Binding
 import java.io.Serializable
@@ -22,13 +23,30 @@ class MainActivity2 : AppCompatActivity() {
         var edt3 = binding.editTextNumber3
         var bmitext = binding.bmitext
         var btnbmi = binding.btnBmi
+        var text = binding.textView5
 
 
         btnbmi.setOnClickListener {
+
             var bmi:Double =  10000 * (edt3.text.toString().toDouble() /  Math.pow(edt2.text.toString().toDouble() ,2.0))
             var bmi1 = round(bmi)
             bmitext.text = bmi1.toString()
+
+            if (bmi1 < 18.5){
+                text.text = "低体重"
+            }else if(bmi < 25.0){
+                text.text = "普通体重"
+            }else if (bmi < 30){
+                text.text = "肥満１"
+            }else if (bmi < 35){
+                text.text = "肥満２"
+            }else if (bmi < 40){
+                text.text = "肥満３"
+            }else{
+                text.text = "肥満４"
+            }
         }
+
 
 
     }
