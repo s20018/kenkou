@@ -4,4 +4,8 @@
     <string name="text_height">Height :</string>
     <string name="text_weight">Weight :</string>
     <string name="text_age">age :</string>
+    <string name="text_you">you</string>
+    <string name="text_average">average</string>
+    <string name="text_comparison">comparison</string>
+    <string name="btn_back">back</string>
 </resources>

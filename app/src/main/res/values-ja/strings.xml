@@ -5,4 +5,8 @@
     <string name="text_height">身長 :</string>
     <string name="text_weight">体重 :</string>
     <string name="text_age">年齢 :</string>
+    <string name="text_you">あなた</string>
+    <string name="text_average">平均</string>
+    <string name="text_comparison">比較</string>
+    <string name="btn_back">戻る</string>
 </resources>

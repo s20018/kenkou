@@ -3,11 +3,7 @@ package com.example.bmi
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import com.example.bmi.databinding.ActivityMain2Binding
-import java.io.Serializable
 import kotlin.math.round
 
 class MainActivity2 : AppCompatActivity() {
@@ -24,7 +20,7 @@ class MainActivity2 : AppCompatActivity() {
         var bmitext = binding.bmitext
         var btnbmi = binding.btnBmi
         var text = binding.textView5
-
+        var back = binding.button5
 
         btnbmi.setOnClickListener {
 
@@ -45,6 +41,10 @@ class MainActivity2 : AppCompatActivity() {
             }else{
                 text.text = "肥満４"
             }
+        }
+        back.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
 
